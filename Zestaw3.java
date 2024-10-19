@@ -8,6 +8,26 @@ public class Zestaw3 {
         }
         return val;
     }
+    static void trojkiPitagorejskie(int n){
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n; j++){
+                for(int k = 1; k <= n; k++){
+                    if(pow(i,2) + pow(j,2) == pow(k,2)){
+                        System.out.println(i + "² + " + j + "² = " + k + "²");
+                    }
+                }
+            }
+        }
+    }
+    static void liczbypierwsze(int n ){
+        for(int i = 2; i <= n; i++){
+            for(int j = 2; j < n;j++){
+                if(i%j == 0 && i != j){
+                    System.out.println(i);
+                }
+            }
+        }
+    }
     static void trojkatpascala(int n){
         String space = "";
         for(int i = 0; i < n; i++){
@@ -45,7 +65,9 @@ public class Zestaw3 {
         }
     }
     public static void main(String[] args) {
-        trojkatpascala(6);
-        czyPalindrom(56261);
+//        trojkatpascala(2);
+//        czyPalindrom(56261);
+//        trojkiPitagorejskie(100);
+          liczbypierwsze(10);
     }
 }
